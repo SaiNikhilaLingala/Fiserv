@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-09T23:04:59 PST" name="Default suite" finished-at="2024-01-09T23:05:19 PST" duration-ms="19939">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGRunner@2a265ea9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-01-09T23:04:59 PST" name="Default test" finished-at="2024-01-09T23:05:19 PST" duration-ms="19939">
+      <class name="CucumberOptions.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:CucumberOptions.TestNGRunner@2a265ea9]" started-at="2024-01-09T23:04:59 PST" name="setUpClass" finished-at="2024-01-09T23:05:00 PST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7e744f43]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGRunner@2a265ea9]" started-at="2024-01-09T23:05:00 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-09T23:05:19 PST" duration-ms="19039" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify first results on different browsers and search engines"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Engine results"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected text was not found within the actual text expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected text was not found within the actual text expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at StepDefinition.SearchTeam.first_result_should_be(SearchTeam.java:79)
+at ✽.first result should be "Hi"(file:///C:/Users/hello/eclipse-workspace/Fiserv/src/test/java/Feature/SearchTerm.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestNGRunner@2a265ea9]" started-at="2024-01-09T23:05:19 PST" name="tearDownClass" finished-at="2024-01-09T23:05:19 PST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberOptions.TestNGRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
